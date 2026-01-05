@@ -34,19 +34,13 @@ const Footer = () => {
                 <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
                     {/* Column 1 - Brand */}
                     <div className="lg:col-span-1">
-                        <div className="flex items-center gap-3 mb-4">
-                            <div className="w-10 h-10 rounded-full bg-gradient-to-br from-or to-or-dark flex items-center justify-center">
-                                <svg className="w-5 h-5 text-charbon" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M13 3L4 14h7l-2 7 9-11h-7l2-7z" />
-                                </svg>
-                            </div>
-                            <div>
-                                <span className="text-lg font-heading font-light tracking-wide text-ivoire">
-                                    Elecance
-                                </span>
-                                <span className="text-lg font-heading font-light tracking-wide text-or ml-1">
-                                    Électricité
-                                </span>
+                        <div className="mb-4 inline-block">
+                            <div className="bg-ivoire/95 rounded-lg px-3 py-1.5 shadow-sm">
+                                <img
+                                    src="/logo.png"
+                                    alt="Elecance Électricité"
+                                    className="h-12 w-auto"
+                                />
                             </div>
                         </div>
                         <p className="text-ivoire/60 text-sm font-light leading-relaxed">

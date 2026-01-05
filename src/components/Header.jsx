@@ -34,26 +34,20 @@ const Header = () => {
     return (
         <header
             className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
-                    ? 'bg-charbon/95 backdrop-blur-md shadow-lg'
-                    : 'bg-transparent'
+                ? 'bg-charbon/95 backdrop-blur-md shadow-lg'
+                : 'bg-transparent'
                 }`}
         >
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex items-center justify-between h-20">
                     {/* Logo */}
-                    <a href="#hero" onClick={(e) => handleNavClick(e, '#hero')} className="flex items-center gap-3">
-                        <div className="w-10 h-10 rounded-full bg-gradient-to-br from-or to-or-dark flex items-center justify-center">
-                            <svg className="w-5 h-5 text-charbon" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M13 3L4 14h7l-2 7 9-11h-7l2-7z" />
-                            </svg>
-                        </div>
-                        <div className="hidden sm:block">
-                            <span className="text-lg font-heading font-light tracking-wide text-ivoire">
-                                Elecance
-                            </span>
-                            <span className="text-lg font-heading font-light tracking-wide text-or ml-1">
-                                Électricité
-                            </span>
+                    <a href="#hero" onClick={(e) => handleNavClick(e, '#hero')} className="flex items-center">
+                        <div className="bg-ivoire/95 rounded-lg px-3 py-1.5 shadow-sm">
+                            <img
+                                src="/logo.png"
+                                alt="Elecance Électricité"
+                                className="h-10 sm:h-12 w-auto"
+                            />
                         </div>
                     </a>
 
